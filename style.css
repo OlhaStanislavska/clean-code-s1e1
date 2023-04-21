@@ -17,10 +17,12 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-  .header { text-align: center;
+@media (max-width: 768px) {
+  .header { 
+    text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
@@ -58,6 +60,7 @@
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title {
   color: #333;
@@ -92,7 +95,6 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,7 +102,6 @@
 .task-container {
   vertical-align: middle;
 }
-
 .task-container > .task-check {
   margin: 0 10px;
 }
@@ -130,13 +131,11 @@
 #completed-tasks .task-container .task-input {
   display: none;
 }
-
 #incomplete-tasks .task-container.edit-mode .task-input,
 #completed-tasks .task-container.edit-mode .task-input {
   display: inline-block;
   width: 224px;
 }
-
 #incomplete-tasks .task-container.edit-mode .task-text,
 #completed-tasks .task-container.edit-mode .task-text {
   display: none;
